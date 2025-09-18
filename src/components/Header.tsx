@@ -45,9 +45,7 @@ const Header = () => {
             <button onClick={() => scrollToSection('values')} className="text-foreground hover:text-primary transition-colors">
               {t('nav.values')}
             </button>
-            <button onClick={() => navigate('/research')} className="text-foreground hover:text-primary transition-colors">
-              {t('nav.research')}
-            </button>
+
             <button onClick={() => scrollToSection('contact')} className="text-foreground hover:text-primary transition-colors">
               {t('nav.contact')}
             </button>

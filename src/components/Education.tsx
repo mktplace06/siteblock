@@ -1,10 +1,20 @@
+import { useState } from "react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { useLanguage } from "@/contexts/LanguageContext";
 
 const Education = () => {
   const { t, language } = useLanguage();
-  
+  const [isOpen, setIsOpen] = useState(false);
+  const scrollToSection = (sectionId: string) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({
+        behavior: 'smooth'
+      });
+      setIsOpen(false);
+    }
+  };
   return (
     <section className="py-20 bg-dark-bg text-dark-foreground">
       <div className="max-w-7xl mx-auto px-4">
@@ -72,7 +82,7 @@ const Education = () => {
         </div>
         
         <div className="text-center">
-          <Button size="lg" className="text-lg px-8 py-6">
+          <Button size="lg" onClick={() => scrollToSection('newsletter')} className="text-lg px-8 py-6">
             {language === 'pt' ? 'Quero Receber Conteúdo' : 'I Want to Receive Content'}
           </Button>
         </div>
