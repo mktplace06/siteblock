@@ -71,7 +71,7 @@ const Contact = () => {
         { value: "dcm-debt", label: "DCM - Debt tokens" },
         { value: "compliance", label: "Compliance regulatório" },
         { value: "educacao", label: "Educação executiva" },
-        { value: "research", label: "Research & Newsletter" }
+        { value: "research", label: "Reports & Newsletter" }
       ]
     : [
         { value: "tokenizacao-ativos", label: "Asset tokenization" },
@@ -79,12 +79,12 @@ const Contact = () => {
         { value: "dcm-debt", label: "DCM - Debt tokens" },
         { value: "compliance", label: "Regulatory compliance" },
         { value: "educacao", label: "Executive education" },
-        { value: "research", label: "Research & Newsletter" }
+        { value: "research", label: "Reports & Newsletter" }
       ];
 
   const interestAreas = language === 'pt'
-    ? ["Tokenização de ativos", "ECM - Equity tokens", "DCM - Debt tokens", "Compliance regulatório", "Educação executiva", "Research & Newsletter"]
-    : ["Asset tokenization", "ECM - Equity tokens", "DCM - Debt tokens", "Regulatory compliance", "Executive education", "Research & Newsletter"];
+    ? ["Tokenização de ativos", "ECM - Equity tokens", "DCM - Debt tokens", "Compliance regulatório", "Educação executiva", "Reports & Newsletter"]
+    : ["Asset tokenization", "ECM - Equity tokens", "DCM - Debt tokens", "Regulatory compliance", "Executive education", "Reports & Newsletter"];
 
   return (
     <section className="py-20 bg-dark-bg text-dark-foreground">

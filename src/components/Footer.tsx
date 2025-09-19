@@ -22,7 +22,7 @@ const Footer = () => {
             <h3 className="font-bold mb-4 text-primary">{t('footer.services')}</h3>
             <ul className="space-y-2 text-gray-300">
               {(language === 'pt' 
-                ? ['ECM - Equity Tokenizado', 'DCM - Debt Tokenizado', 'Assessoria em Tokenização', 'Educação & Research']
+                ? ['ECM - Equity Tokenizado', 'DCM - Debt Tokenizado', 'Assessoria em Tokenização', 'Educação & Reports']
                 : ['ECM - Tokenized Equity', 'DCM - Tokenized Debt', 'Tokenization Advisory', 'Education & Research']
               ).map((service, index) => (
                 <li key={index}>{service}</li>
