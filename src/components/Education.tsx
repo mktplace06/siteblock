@@ -57,7 +57,7 @@ const Education = () => {
           
           <Card className="bg-card/10 border-gray-700 text-white">
             <CardHeader>
-              <CardTitle className="text-xl text-primary">Research & Newsletter</CardTitle>
+              <CardTitle className="text-xl text-primary">Reports & Newsletter</CardTitle>
               <CardDescription className="text-gray-300">
                 {language === 'pt'
                   ? 'Relatórios, radar trimestral e curadoria semanal (Brasil/EUA)'

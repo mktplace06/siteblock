@@ -111,7 +111,7 @@ const Newsletter = () => {
             </p>
           </div>
           <div>
-            <div className="text-2xl font-bold text-primary mb-2">Research</div>
+            <div className="text-2xl font-bold text-primary mb-2">Reports</div>
             <p className="text-sm text-muted-foreground">
               {language === 'pt'
                 ? 'Análises completas sobre ativos tokenizados da equipe da Blockwise'
